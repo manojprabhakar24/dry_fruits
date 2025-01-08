@@ -121,7 +121,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     return Scaffold(
       body: Container(
-        color: const Color(0xFFFAD48D), // Set background color to #FAD48D
+        color: const Color(0xFFF1EFEA),
 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

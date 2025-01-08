@@ -61,9 +61,10 @@ class Images {
 
   // Image
   static const String appLogo = 'assets/image/sanjana_light.png';
+  //static const String mini = 'assets/image/dry_fruits.png';
 //  static const String darkAppLogo = 'assets/image/sanjana_dark.png';
   static const String appbarlogo = 'assets/image/dry_fruits.png';
-  static const String heylix = 'assets/image/heylix_ai.png';
+  static const String heylix = 'assets/image/heylix_black.png';
   static const String appstronauts = 'assets/image/appstronauts.png';
 
   static const String webBarLogoPlaceHolder = 'assets/image/web_bar_logo_place_holder.png';

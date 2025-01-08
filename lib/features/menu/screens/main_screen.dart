@@ -117,7 +117,7 @@ class _MainScreenState extends State<MainScreen> {
                       widget.drawerController.toggle();
                     }
                   },
-                  child: Scaffold(
+                  child:Scaffold(
                     floatingActionButton: !ResponsiveHelper.isDesktop(context)
                         ? Padding(
                       padding: const EdgeInsets.symmetric(vertical: 50.0),
@@ -129,28 +129,17 @@ class _MainScreenState extends State<MainScreen> {
                         : AppBar(
                       backgroundColor: Theme.of(context).cardColor,
                       leading: IconButton(
-                          icon: Image.asset(Images.moreIcon, color: Theme.of(context).primaryColor, height: 30, width: 30),
-                          onPressed: () {
-                            widget.drawerController.toggle();
-                          }),
+                        icon: Image.asset(Images.moreIcon, color: Theme.of(context).primaryColor, height: 30, width: 30),
+                        onPressed: () {
+                          widget.drawerController.toggle();
+                        },
+                      ),
                       title: splash.pageIndex == 0
-                          ? Row(
-                        children: [
-                          Image.asset(Images.appLogo, width: 50), // Increase the logo size
-                          const SizedBox(width: Dimensions.paddingSizeSmall),
-                          Expanded(
-                            child: Text(
-                              AppConstants.appName,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: poppinsMedium.copyWith(
-                                color: Theme.of(context).primaryColor,
-                                fontSize: Dimensions.fontSizeLarge * 1, // Reduce the app name font size
-                              ),
-                            ),
-                          ),
-                        ],
-                      )
+                          ? Image.asset(
+                            Images.appLogo,
+                            width: MediaQuery.of(context).size.width * 0.3, // Dynamically adjust width
+                            fit: BoxFit.contain,
+                          )
                           : Text(
                         getTranslated(splash.screenList[splash.pageIndex].title, context),
                         style: poppinsMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).primaryColor),
@@ -199,6 +188,9 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                     body: splash.screenList[splash.pageIndex].screen,
                   ),
+
+
+
                 ),
               );
             },

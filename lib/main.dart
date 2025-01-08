@@ -35,7 +35,6 @@ import 'package:flutter_grocery/features/splash/providers/splash_provider.dart';
 import 'package:flutter_grocery/common/providers/theme_provider.dart';
 import 'package:flutter_grocery/features/wallet_and_loyalty/providers/wallet_provider.dart';
 import 'package:flutter_grocery/features/wishlist/providers/wishlist_provider.dart';
-import 'package:flutter_grocery/theme/dark_theme.dart';
 import 'package:flutter_grocery/theme/light_theme.dart';
 import 'package:flutter_grocery/utill/app_constants.dart';
 import 'package:flutter_grocery/common/widgets/third_party_chat_widget.dart';
@@ -76,13 +75,13 @@ Future<void> main() async {
     }
   } else {
     await Firebase.initializeApp(options: const FirebaseOptions(
-        apiKey: "AIzaSyDuBlqmsh9xw17osLOuEn7iqHtDlpkulcM",
-        authDomain: "grofresh-3986f.firebaseapp.com",
-        projectId: "grofresh-3986f",
-        storageBucket: "grofresh-3986f.appspot.com",
-        messagingSenderId: "250728969979",
-        appId: "1:250728969979:web:b79642a7b2d2400b75a25e",
-        measurementId: "G-X1HCG4K8HJ"
+        apiKey: "AIzaSyDXKulm7wCqIBsJXMq2JhoGw_xRn7iP1Cc",
+        authDomain: "sanjanafruits-fe35b.firebaseapp.com",
+        projectId: "sanjanafruits-fe35b",
+        storageBucket: "sanjanafruits-fe35b.firebasestorage.app",
+        messagingSenderId: "361395576356",
+        appId: "1:361395576356:web:39ce7e01f1eeba4e1242b1",
+        measurementId: "G-1G8K9BX8CZ"
     ));
 
     await FacebookAuth.instance.webAndDesktopInitialize(
