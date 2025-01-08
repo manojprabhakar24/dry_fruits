@@ -52,7 +52,7 @@ import 'common/widgets/cookies_widget.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
-
+///
 
 AndroidNotificationChannel? channel;
 Future<void> main() async {
