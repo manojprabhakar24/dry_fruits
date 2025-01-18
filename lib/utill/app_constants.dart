@@ -4,11 +4,11 @@ import 'images.dart';
 
 class AppConstants {
   static const String appName = 'Sanjana Dry Fruits';
-  static const double appVersion = 7.5;
+  static const double appVersion = 2.0;
   static const AppMode appMode = AppMode.release;
   static const String fontFamily = 'Poppins';
   static const String baseUrl = 'https://admin.sanjanafruitsanddryfruits.com';
-  static const String webHostUrl = 'https://admin.sanjanafruitsanddryfruits.com';
+  static const String webHostUrl = 'https://sanjanafruitsanddryfruits.com';
   static const String configUri = '/api/v1/config';
   static const String bannerUri = '/api/v1/banners';
   static const String categoryUri = '/api/v1/categories';
